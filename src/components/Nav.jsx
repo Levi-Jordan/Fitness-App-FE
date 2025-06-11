@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";\
+import { Link } from "react-router-dom";
 
 export default function Nav() {
     return (
@@ -10,7 +10,7 @@ export default function Nav() {
         }}>
 
                 <li>
-                    <Link to="/about">About</Link>
+                    <Link to="/Dashboard">Dashboard</Link>
                 </li>
                 <li>
                     <Link to="/">Home</Link>
