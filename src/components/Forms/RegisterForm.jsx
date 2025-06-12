@@ -9,6 +9,10 @@ export default function RegisterForm() {
         try {
             const res = await axios.post('', form);
             localStorage.setItem('token', res.data.token);
+            alert("Registration confirmed!");
+        } catch (err){
+            console.error(err)
+            alert("Registration failed")
         }
     }
 }
