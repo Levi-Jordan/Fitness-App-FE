@@ -8,6 +8,7 @@ export default function Nav() {
             width: "100%",
         }}>
             <ul style={{
+            listStyle: "none",
             color: "pink",
             display: "flex",
             justifyContent: "space-around"
