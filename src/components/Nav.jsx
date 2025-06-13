@@ -16,7 +16,7 @@ export default function Nav() {
                     <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <Link to="/login">Sign In</Link>
+                    <Link to="/login">Log in</Link>
                 </li>
                 <li>
                     <Link to="/register">Register</Link>
