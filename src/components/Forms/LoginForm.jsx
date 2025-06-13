@@ -10,6 +10,7 @@ export default function LoginForm() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        console.log("logging in with", form)
         try {
             const res = await api.post('/user/login', form);
             login(res.data.token);

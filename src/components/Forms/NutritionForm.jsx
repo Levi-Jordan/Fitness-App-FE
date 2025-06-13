@@ -16,7 +16,10 @@ export default function NutritionForm({ initialLoad = null, onComplete }) {
         }
     }, [initialLoad])
     const handleChange = (e) => {
-        setForm({ ...form, [e.target.name]: e.target.value })
+        const { name, valueAsNumber, value, type } = e.target
+        setForm(prev => ({
+            ...prev, [name]: type === "number" ? (isNaN(valueAsNumber) ? '' : valueAsNumber) : value
+        }))
     }
 
     const handleSubmit = async (e) => {
