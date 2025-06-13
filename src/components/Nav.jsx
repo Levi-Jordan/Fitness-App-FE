@@ -18,6 +18,9 @@ export default function Nav() {
                 <li>
                     <Link to="/login">Sign In</Link>
                 </li>
+                <li>
+                    <Link to="/register">Register</Link>
+                </li>
             </ul>
         </nav>
     );
