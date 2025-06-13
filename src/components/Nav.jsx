@@ -2,9 +2,13 @@ import { Link } from "react-router-dom";
 
 export default function Nav() {
     return (
-        <nav>
+        <nav style={{
+            position: "fixed",
+            top: "0",
+            width: "100%",
+        }}>
             <ul style={{
-            color: "orange",
+            color: "pink",
             display: "flex",
             justifyContent: "space-around"
         }}>
